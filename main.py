@@ -8,10 +8,6 @@ settings.disable_validate_slice_increment()
 dicom_path = input("Input path to dataset: ")
 nifti_path = input("Input path where dataset will store: ")
 
-# dicom_path = "/Users/ilya/Documents/datasets/CTAG-2/"
-# nifti_path = "/Users/ilya/Documents/niftiData/"
-# nifti_path = "/Users/ilya/Documents/testTest/"
-
 dicom_paths = [
     os.path.join(os.getcwd(), dicom_path, x)
     for x in os.listdir(dicom_path)
